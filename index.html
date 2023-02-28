@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVO Academy JS Starter with Vite</title>
+    <link rel="stylesheet" href="./src//pages/home-page/styles/home-page.css" />
+    <link rel="stylesheet" href="./src/global-styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
+
+  <body>
+    <div id="home-page">
+      <div id="container">
+        <img
+          id="img"
+          src="./public/images/AdobeStock_331830515 1.jpg"
+          alt="music"
+        />
+        <h1>Order Summary</h1>
+        <div id="body1">
+          You're close! Confirm your purchase and complete your order in the
+          next step
+        </div>
+        <div id="field">
+          <img id="icon" src="./public/images/Vector.png" alt="song icon" />
+          <div id="stroke"></div>
+          <div id="info">
+            <h2 id="infoText">Annual Plan</h2>
+            <div id="body2">$58.99 / year</div>
+          </div>
+          <a href="#">Change</a>
+        </div>
+        <button id="btn" onclick="module.loader()">Procced to Payment</button>
+        <a id="cancel" href="#">Cancel Order</a>
+      </div>
+    </div>
+    <script type="module" src="/src/global-scripts/main.js"></script>
+    <script
+      type="module"
+      src="/src/pages/home-page/scripts/home-page.js"
+    ></script>
+    <script>
+      document.getElementById("btn").onclick = () => {
+        const btn = document.getElementById("btn");
+        btn.innerHTML = `<i class="fa fa-circle-o-notch fa-spin"></i>`;
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-background);
+  height: 100vh;
+}
+
+//Desktop
+h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  size: 32px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: var(--color-title);
+}
+
+h2 {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  size: 18px;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+
+#body1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: medium;
+  size: 16px;
+  line-height: 16px;
+  letter-spacing: -1%;
+}
+
+#body2 {
+  font-family: "Manrope", sans-serif;
+  font-weight: medium;
+  size: 12px;
+  line-height: 12px;
+  letter-spacing: -1%;
+}
+
+button {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  size: 16px;
+  line-height: 160%;
+  letter-spacing: -1%;
+}
+
+a {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  size: 16px;
+  line-height: 160%;
+  letter-spacing: -1%;
+}
+
+//Tablet and mobile
+@media only screen and (max-width: 900px) {
+  h1 {
+    size: 24px;
+    line-height: 24px;
+  }
+
+  h2 {
+    size: 16px;
+    line-height: 16px;
+  }
+
+  #body1 {
+    size: 14px;
+    line-height: 14px;
+  }
+
+  #body2 {
+    size: 12px;
+    line-height: 12px;
+  }
+
+  button {
+    size: 16px;
+    line-height: 160%;
+  }
+
+  a {
+    size: 14px;
+    line-height: 160%;
+  }
+}
