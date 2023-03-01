@@ -1,3 +1,6 @@
+Link to hosted website: https://szariii.github.io/order_summary/
+
+
 # INVO Academy JS Starter with Vite
 
 In order to see this file in preview mode in VS Code, press ```Ctrl + Shift + V```
